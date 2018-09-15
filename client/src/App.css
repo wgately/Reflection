@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-logo-1 {
+  animation: App-logo-spin infinite 2.5s linear;
+  height: 80px;
+}
+.App-logo-2 {
+  animation: App-logo-spin-2 infinite 2.5s linear;
+  height: 80px;
+}
+.App-logo-3 {
+  animation: App-logo-spin-3 infinite 2s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.user-input-container {
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  background-attachment: scroll;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color:#222;
+  background-image: url(background.jpg);
+  overflow-x:hidden
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(30deg); }
+  to { transform: rotate(390deg); }
+}
+@keyframes App-logo-spin-2 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes App-logo-spin-3 {
+  0% { transform: translateX(70%) rotate(180deg) }
+  25% { transform: translateX(0%) rotate(0deg) }
+  50% { transform: translateX(-70%) rotate(-180deg) }
+  75% { transform: translateX(00%) rotate(0deg) }
+  100% { transform: translateX(70%) rotate(180deg)   }
+}

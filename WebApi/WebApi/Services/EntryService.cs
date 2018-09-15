@@ -7,7 +7,7 @@ using WebApi.Models;
 
 namespace WebApi.Services
 {
-    public class EntryService
+    public class EntryService : IEntryService
     {
         public List<Entry> GetAll()
         {
