@@ -30,9 +30,12 @@ namespace WebApi.Services
                             UserId = (int)reader["userId"],
                             Learned = (string)reader["learned"],
                             Challenge = (string)reader["challenge"],
-                            Positive = (string)reader["positive"],
-                            Blog = (string)reader["blog"],
-                            ImageUrl = (string)reader["imageUrl"],
+                            Overcome = (string)reader["overcome"],
+                            Read = (string)reader["read"],
+                            Goal = (string)reader["goal"],
+                            Video = (string)reader["video"],
+                            Travel = (string)reader["travel"],
+                            Meet = (string)reader["meet"],
                             DateCreated = (DateTime)reader["dateCreated"],
                             DateModified = (DateTime)reader["dateModified"]
                         };
@@ -55,10 +58,15 @@ namespace WebApi.Services
                 cmd.Parameters.AddWithValue("@userId", request.UserId);
                 cmd.Parameters.AddWithValue("@learned", request.Learned);
                 cmd.Parameters.AddWithValue("@challenge", request.Challenge);
-                cmd.Parameters.AddWithValue("@positive", request.Positive);
-                cmd.Parameters.AddWithValue("@blog", request.Blog);
-                cmd.Parameters.AddWithValue("@imageUrl", request.ImageUrl);
+                cmd.Parameters.AddWithValue("@overcome", request.Overcome);
+                cmd.Parameters.AddWithValue("@meet", request.Meet);
+                cmd.Parameters.AddWithValue("@goal", request.Goal);
+                cmd.Parameters.AddWithValue("@video", request.Video);
+                cmd.Parameters.AddWithValue("@travel", request.Travel);
+                cmd.Parameters.AddWithValue("@read", request.Read);
                 cmd.Parameters.Add("@Id", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cmd.Parameters.AddWithValue
 
                 cmd.ExecuteNonQuery();
 
